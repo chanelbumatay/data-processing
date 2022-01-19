@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="JS/main.js" />
   <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" href="css/data-processing.css" />
+  <link rel="stylesheet" href="JS/data-processing.js" />
  </nav>
 </head>
 
@@ -23,21 +25,22 @@
      </header>
      
    <main class="wrapper">
-      
+      <div id="output">Output goes here</div>
+          
       <form method="get" action="" class="main-form">
          <div>
             <label for="FirstName">First Name</label>: <br />
-            <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required="required" autofocus />
+            <input type="text" name="First_Name" id="FirstName" placeholder="First Name" required="required" autofocus />
          </div>
 
          <div>
             <label for="LastName">Last Name</label>: <br />
-            <input type="text" name="LastName" id="LastName" placeholder="Last Name" required="required" title="Last Name is a required field" />
+            <input type="text" name="Last_Name" id="LastName" placeholder="Last Name" required="required" title="Last Name is a required field" />
          </div>
 
          <div>
             <label for="email">E-mail</label>: <br />
-            <input type="email" name="email" id="email" placeholder="E-mail" required="required" title="E-mail is a required field" />
+            <input type="email" name="E-mail" id="email" placeholder="E-mail" required="required" title="E-mail is a required field" />
          </div>
 
          <div>
@@ -58,18 +61,18 @@
          <div>
             <fieldset>
                <legend>Would you like to join our mailing list?</legend>
-               <label><input type="radio" name="JoinMailingList" value="Yes" required="required" /> Yes</label><br />
-               <label><input type="radio" name="JoinMailingList" value="No" /> No</label>
+               <label><input type="radio" name="Join_Mailing_List" value="Yes" required="required" /> Yes</label><br />
+               <label><input type="radio" name="Join_Mailing_List" value="No" /> No</label>
             </fieldset>
          </div>
 
          <div>
             <fieldset>
                <legend>Interested In?</legend>
-               <label><input type="checkbox" name="InterestedIn" value="Website" /> Website</label><br />
-               <label><input type="checkbox" name="InterestedIn" value="OnlineCalendar" /> Online Calendar</label><br />
-               <label><input type="checkbox" name="InterestedIn" value="ContactForm" /> Contact Form</label><br />
-               <label><input type="checkbox" name="InterestedIn" value="Lollipops" /> Complimentary Lollipops</label>
+               <label><input type="checkbox" name="Interested_In" value="Website" /> Website</label><br />
+               <label><input type="checkbox" name="Interested_In" value="OnlineCalendar" /> Online Calendar</label><br />
+               <label><input type="checkbox" name="Interested_In" value="ContactForm" /> Contact Form</label><br />
+               <label><input type="checkbox" name="Interested_In" value="Lollipops" /> Complimentary Lollipops</label>
             </fieldset>
          </div>
 
@@ -95,6 +98,7 @@
      
   </main>
   <script src="JS/main.js"></script>  
+  <script src="JS/data-processing.js"></script>  
  </body>
 </html>
 
