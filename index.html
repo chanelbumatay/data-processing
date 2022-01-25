@@ -28,8 +28,8 @@
       <div id="output">
             
       <form method="get" action="" class="main-form">
-         <h5>This page demonstrates data processing of query string data using client side JavaScript.</h5>
-         <h1>Widgets Partial</h1>
+        
+         <h1>Buy a Widget</h1>
          
          <div id="widgets">
             <div>
@@ -78,6 +78,12 @@
             <label for="Address">Address</label>: <br />
             <input type="text" name="Address" id="Address" placeholder="Address" required="required" title="Address is a required field" />
          </div>
+         <div>
+            <label for="City">City</label>: <br />
+            <input type="text" name="City" id="City" placeholder="City" required="required" title="City is a required field" />
+         </div>
+        
+
 
          <div>
             <label for="State">State</label>: <br />
@@ -89,27 +95,15 @@
                <option value="WA">Washington</option>
             </select>
          </div>
-         <div>
-            <fieldset>
-               <legend>Would you like to join our mailing list?</legend>
-               <label><input type="radio" name="Join_Mailing_List" value="Yes" required="required" /> Yes</label><br />
-               <label><input type="radio" name="Join_Mailing_List" value="No" /> No</label>
-            </fieldset>
-         </div>
 
          <div>
-            <fieldset>
-               <legend>Interested In?</legend>
-               <label><input type="checkbox" name="Interested_In" value="Website" /> Website</label><br />
-               <label><input type="checkbox" name="Interested_In" value="OnlineCalendar" /> Online Calendar</label><br />
-               <label><input type="checkbox" name="Interested_In" value="ContactForm" /> Contact Form</label><br />
-               <label><input type="checkbox" name="Interested_In" value="Lollipops" /> Complimentary Lollipops</label>
-            </fieldset>
-         </div>
+            <label for="Postal_Code">Postal Code</label>: <br />
+            <input type="text" name="Postal_Code" id="Postal_Code" placeholder="Postal Code" required="required" title="Postal_Code is a required field" />
+         </div> 
 
          <div>
-            <label for="Comments">Comments</label>: <br />
-            <textarea Name="Comments" cols="36" rows="4" id="Comments" ></textarea>
+            <label for="Notes">Notes</label>: <br />
+            <textarea Name="Notes" cols="36" rows="4" id="Notes" ></textarea>
          </div>
 
          <div>
@@ -120,6 +114,10 @@
    </div>
 
      <footer>
+      <h5><i>This page demonstrates data processing of query string data using client side JavaScript.
+         <br> Upon submission, the cart items are totaled and title case is applied to the Shipping Info.
+         </i> </h5>
+        
 		<p><small>&copy; 2020-<span id="copyright"></span> by
 			Chanel Bumatay, All Rights Reserved ~
 			<a id="html-checker" href="#">Check HTML</a> ~
@@ -133,6 +131,9 @@
   <script src="JS/data-processing.js"></script>  
  </body>
 </html>
+
+
+
 
 <script>
      // declare variables and load default values
